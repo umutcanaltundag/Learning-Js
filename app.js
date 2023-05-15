@@ -38,7 +38,7 @@ console.log(location.port);
 console.log(location.port);
 console.log(location.port);
 
-/*-- Scope (Kapsam) --
+-- Scope (Kapsam) --
     ->Global Scope (Heryerden erişilebilir)
     ->Function Scope 
     -> Block Scope 
@@ -82,14 +82,14 @@ function method1() {
 
 console.log(a);
 method1();
-*/
+
 
 // Var - Let - Const
 
-/*
-var/let/const degiskenIsmi = degiskenDegeri;
-let sayi =10;
-*/
+
+// var/let/const degiskenIsmi = degiskenDegeri;
+// let sayi =10;
+
 
 // var : function scope -- ram bellekte çok fazla yer kaplar
 // let const : block  scope özelliğine sahiptir. 
@@ -139,3 +139,95 @@ const user = {
 user.username="can"
 
 console.log(user);
+
+*/
+
+/*
+?      Veri Tipleri
+1-String
+2-Number
+3-Boolean
+4-Null
+5-Underfined
+6-Object
+7-Function 
+*/
+
+
+//!---------------STRİNG VERİ TİPİ-------------------
+
+// let isim = "Umutcan 16 yaşındadır."
+// console.log(isim);
+// console.log(typeof isim);
+
+// let sayi1 = 10.7;
+// let sayi2 = 5.3;
+
+// console.log(sayi1+sayi2);
+// console.log(typeof sayi1);
+// console.log(a+b)
+
+
+//!-------------NUMBER VERİ TİPİ-----------
+
+// 52
+// let a = "5";
+// let b = "2";
+
+// Yaşınız :23
+
+// let stringDegisken ="Yaşınız: " 
+// let yas = 16;
+
+// console.log(stringDegisken+yas);
+
+
+//!-------------BOOLEAN VERİ TİPİ-----------------
+
+// boolean : true ve false 'dan oluşur
+
+// let a = 3;
+// let b = 12;
+
+// let sonuc = a + b;
+// console.log(sonuc!=15); 
+
+
+//!-------------NULL VERİ TİPİ ----------
+
+// let a = null; //boş
+
+// a=27;
+
+// console.log(a);
+
+
+//!-------------UNDEFİNED VERİ TİPİ-----------------
+
+// let a ;
+// console.log(typeof a);
+
+
+
+//!-------------OBJECT VERİ TİPİ-----------------
+//object
+// let insan = {
+//     isim :" Umut",
+//     soyisim: "Can",
+//     yas:16
+// }
+
+// privimate ve referans tipler nedir, farkları nelerdir?
+
+// console.log(typeof insan);
+
+
+
+// let rakamlar =[0,1,2,3,4,5];
+// console.log(rakamlar);
+
+let func = function(){
+    console.log("Merhaba");
+}
+
+console.log(typeof func);
