@@ -1,7 +1,7 @@
 /*
 //  Document write ile çıktı verme.
 // -- Komutları test etmek için kullanılır, sonuçları ekrana yazdırmak için - document.write("...") kullanılır. --
-document.writeln("Hello World <br>"); - line 
+document.writeln("Hello World <br>"); - line
 document.write("Umut Can <br>");
 document.write("5.5");
 
@@ -40,8 +40,8 @@ console.log(location.port);
 
 -- Scope (Kapsam) --
     ->Global Scope (Heryerden erişilebilir)
-    ->Function Scope 
-    -> Block Scope 
+    ->Function Scope
+    -> Block Scope
 
 
 var Umut =10;
@@ -63,7 +63,7 @@ function method1(){
 method1();
 
 
-// function scope 
+// function scope
 
 var b = 12; //global scope
 
@@ -76,7 +76,7 @@ function method1() {
 
     }
     for(let i =0 ; i<=10; i++){
-        
+
     }
 }
 
@@ -92,7 +92,7 @@ method1();
 
 
 // var : function scope -- ram bellekte çok fazla yer kaplar
-// let const : block  scope özelliğine sahiptir. 
+// let const : block  scope özelliğine sahiptir.
 
 
 // function selamVer() {
@@ -140,9 +140,9 @@ user.username="can"
 
 console.log(user);
 
-*/
 
-/*
+
+
 ?      Veri Tipleri
 1-String
 2-Number
@@ -150,8 +150,9 @@ console.log(user);
 4-Null
 5-Underfined
 6-Object
-7-Function 
-*/
+7-Function
+
+
 
 
 //!---------------STRİNG VERİ TİPİ-------------------
@@ -176,7 +177,7 @@ console.log(user);
 
 // Yaşınız :23
 
-// let stringDegisken ="Yaşınız: " 
+// let stringDegisken ="Yaşınız: "
 // let yas = 16;
 
 // console.log(stringDegisken+yas);
@@ -190,10 +191,10 @@ console.log(user);
 // let b = 12;
 
 // let sonuc = a + b;
-// console.log(sonuc!=15); 
+// console.log(sonuc!=15);
 
 
-//!-------------NULL VERİ TİPİ ----------
+//!-------------NULL VERİ TİPİ ------------------
 
 // let a = null; //boş
 
@@ -202,7 +203,7 @@ console.log(user);
 // console.log(a);
 
 
-//!-------------UNDEFİNED VERİ TİPİ-----------------
+//!-------------UNDEFİNED VERİ TİPİ--------------
 
 // let a ;
 // console.log(typeof a);
@@ -231,3 +232,72 @@ let func = function(){
 }
 
 console.log(typeof func);
+
+*/
+
+//!--------ARİTMETİK OPERATÖRLER--------------
+
+/*
+-------->   = atama operatörü önemli !
+    +
+    -
+    *
+    /
+    %
+    ++
+    --
+    **
+*/
+
+// string + number = stringnumber
+
+
+// let not1 = 100;
+// let not2 = 70;
+
+// console.log(not1-not2);
+
+// let sayi1 = "5";
+// let sayi2 = 2;
+// console.log(sayi1+sayi2);
+
+// console.log("Notlarınızın toplamı:" + (not1 + not2));
+
+// ü,ö,ş,İ,ğ,ı
+// birleşik olarak tanımlanmalıdır değişken ismi.
+
+// let musteriNo = 5;
+// let sayi2 = 10;
+
+// console.log(sayi1*sayi2);
+
+
+// let not1 =100;
+// let not2 =70;
+
+// let sonuc = (not1+not2)/2;
+// console.log(sonuc);
+
+
+/*
+
+    10 / 3 =  1
+    12 / 5 =  2
+
+*/
+
+// console.log(10%3);
+// console.log(12%5);
+
+// + : 1 arttırmak için kullanılır
+
+// let a = 10;
+// a++; //11
+// a++; //12
+// a--; //11
+// a--; //10
+// console.log(a);
+
+// ** : 2^3 = 8
+
+// console.log(5**3);
