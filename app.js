@@ -354,7 +354,7 @@ console.log(typeof func);
 
 // console.log(sayi);
 
-*/
+
 
 //!------------MANTIKSAL OPERATÖRLER-----------
 
@@ -377,3 +377,24 @@ let hakSayisi = 3;
 // console.log( !(saglikliMi) );
 
 console.log((para > 3000) || (yas>18 && saglikliMi));
+
+*/
+
+//! -----KARŞILAŞTIRMA OPERATÖRLERİ--------
+
+
+    // == : eşit mi
+    // != : eşit değil mi
+    // > : büyük mü
+    // < : kücük mü
+
+    // >= büyük eşit mi
+    // <= küçük eşit mi
+
+
+// console.log(5!=3);
+// let yas = 16;
+// console.log(yas!=15);
+
+// console.log(12<=12);
+// 12<12 || 12==12
