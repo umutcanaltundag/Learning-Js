@@ -247,7 +247,7 @@ console.log(typeof func);
     ++
     --
     **
-*/
+
 
 // string + number = stringnumber
 
@@ -279,12 +279,12 @@ console.log(typeof func);
 // console.log(sonuc);
 
 
-/*
 
-    10 / 3 =  1
-    12 / 5 =  2
 
-*/
+//  10 / 3 =  1
+//  12 / 5 =  2
+
+
 
 // console.log(10%3);
 // console.log(12%5);
@@ -301,3 +301,55 @@ console.log(typeof func);
 // ** : 2^3 = 8
 
 // console.log(5**3);
+
+*/
+
+// ----------ATAMA OPERATÖRLERİ-----------
+
+//   =
+//   ==
+//   ===
+//   +=
+//   -=
+//   *=
+//   /=
+//   %=
+//   **=
+
+// let a =5;
+
+// == eşittir. 
+
+// let a = 5;
+// let b = 10;
+// let sonuc = a+b;
+// console.log(sonuc ==15);
+
+// == :
+// console.log(5=="5");
+
+// === : hem tiplerine hemde değerlerinin eşit olup olmadıklarına bakar
+
+// console.log(5==="5");
+
+
+// let sayi = 4;
+// sayi = sayi+2;
+// sayi+=2;    
+
+// sayi = sayi-3;
+// sayi-=3;
+
+// sayi = sayi*5;
+// sayi*=5;
+
+// sayi = sayi/4;
+// sayi/=4; 
+
+// sayi = sayi%5;
+// sayi%=5;
+
+// sayi = sayi ** 2;
+// sayi **= 2;
+
+// console.log(sayi);
