@@ -378,7 +378,7 @@ let hakSayisi = 3;
 
 console.log((para > 3000) || (yas>18 && saglikliMi));
 
-*/
+
 
 //! -----KARŞILAŞTIRMA OPERATÖRLERİ--------
 
@@ -398,3 +398,26 @@ console.log((para > 3000) || (yas>18 && saglikliMi));
 
 // console.log(12<=12);
 // 12<12 || 12==12
+*/
+
+//! --------DİYALOG KUTULARI-----------
+//   - Alert
+//   - Prompt
+//   - Confirm
+
+// console.log(window);
+
+alert("İşleminize devam etmeden önce kaydetmelisiniz!")
+
+// let isim = prompt("İsminizi giriniz :");
+// let yas = prompt("Yaşınızı giriniz:");
+
+// console.log("İsminiz : " + isim);
+// console.log("Yaşınız : " + yas);
+
+// console.log(typeof isim);
+// console.log(typeof yas);
+
+
+// let sonuc = confirm("Silmek istediğinize emin misiniz?");
+// console.log(sonuc);
