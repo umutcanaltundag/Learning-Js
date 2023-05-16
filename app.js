@@ -302,7 +302,7 @@ console.log(typeof func);
 
 // console.log(5**3);
 
-*/
+
 
 // ----------ATAMA OPERATÖRLERİ-----------
 
@@ -353,3 +353,27 @@ console.log(typeof func);
 // sayi **= 2;
 
 // console.log(sayi);
+
+*/
+
+//!------------MANTIKSAL OPERATÖRLER-----------
+
+
+//   && : ve  
+//   || : veya
+//   !  : değil
+
+// Yaşınız 18'den büyükse VE 3000 TL para olması VE sağlığınız yerindeyse 
+
+let yas = 16;
+let para = 3500;
+let saglikliMi = false;
+let hakSayisi = 3;
+
+// console.log(yas>15 && para>3000 && saglikliMi==true)
+
+// console.log(5 > 3 || 2 < 3);
+
+// console.log( !(saglikliMi) );
+
+console.log((para > 3000) || (yas>18 && saglikliMi));
