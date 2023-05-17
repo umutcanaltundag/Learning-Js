@@ -233,7 +233,7 @@ let func = function(){
 
 console.log(typeof func);
 
-*/
+
 
 //!--------ARİTMETİK OPERATÖRLER--------------
 
@@ -398,7 +398,7 @@ console.log((para > 3000) || (yas>18 && saglikliMi));
 
 // console.log(12<=12);
 // 12<12 || 12==12
-*/
+
 
 //! --------DİYALOG KUTULARI-----------
 //   - Alert
@@ -421,3 +421,76 @@ alert("İşleminize devam etmeden önce kaydetmelisiniz!")
 
 // let sonuc = confirm("Silmek istediğinize emin misiniz?");
 // console.log(sonuc);
+
+
+//!-------KOŞUL YAPILARI------
+
+// let not =50;
+
+// if(not>45){
+//     console.log("Geçtiniz, notunuz : " + not);
+// }else{
+//     console.log("Kaldınız, notunuz : " + not);
+// }
+
+
+// let yas = Number( prompt("Yaşınız : "));
+// console.log(typeof yas);
+// let para =Number( prompt("Bütçeniz : "));
+
+// if (yas>18 && para>3000) {
+//     alert("Ehliyet sınavına katılabilirsiniz");
+// }else{
+//     alert("Ehliyet sınavına katılamazsınız");
+// }
+
+//!-------DERS ORTALAMASI BULMA-------
+
+// vize1 %30 , vize %30 , final %40
+
+// let vize1 = Number(prompt("Vize 1 notunuzu giriniz :"));
+// let vize2 = Number(prompt("Vize 2 notunuzu giriniz :"));
+
+// let final = Number(prompt("Final notunuzu giriniz : "))
+
+// let ortalama = Number((vize1*0.3) + (vize2*0.3) +  (final*0.4));
+
+// if (ortalama>=60) {
+//     alert("Dersten geçtiniz tebrikler :))   --> " + ortalama);
+//     console.log("Dersten geçtiniz tebrikler :))");
+// } else {
+//     alert("Kaldınız, geçmiş olsun :(    --> " + ortalama);
+//     console.log("Kaldınız, geçmiş olsun :(" );
+// }
+ 
+//!----------ELSE İF YAPISI------------- 
+
+
+
+    // -           -              -
+    //  -          -            -
+    //   -         -           -
+    //    -        -         -
+    //     -       -        -
+    //      -      -      -
+    //       -     -    -
+    //     1.yol  2.yol  3.yol
+
+
+let secilenYol = prompt("Lütfen girmek istediğiniz yolu seçiniz :");
+
+if (secilenYol == 1) {
+    alert("Seçilen yol  " + secilenYol + ". yoldur");
+}
+
+else if (secilenYol == 2) {
+    alert("Seçilen yol  " + secilenYol + ". yoldur");
+}
+
+else if (secilenYol == 3) {
+    alert("Seçilen yol  " + secilenYol + ". yoldur");
+}
+else {
+    alert("Lütfen geçerli bir yol seçiniz !!");
+}
+*/
