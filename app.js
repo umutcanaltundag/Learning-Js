@@ -493,4 +493,107 @@ else if (secilenYol == 3) {
 else {
     alert("Lütfen geçerli bir yol seçiniz !!");
 }
+
+
+//! Beden Kitle İndeksi Hesaplama
+
+
+let kilo =Number(prompt("Kilonuzu giriniz"));
+
+let boy = Number(prompt("Boyunuzu metre cinsinden giriniz "))
+
+let sonuc = kilo/(boy**2);
+
+if(sonuc<18.5){
+    console.log("İdeal kilonun altında");
+
+}else if(sonuc>=18.5 && sonuc<=24.9){
+    console.log("İdeal kilonun altında" + sonuc);
+    
+}else if(sonuc>=25 && sonuc<=29.9){
+    console.log("İdeal kiloda" + sonuc);
+
+}else if(sonuc>=30 && sonuc<=39.9){
+    console.log("İdeal kilonun çok üstünde (obez)" + sonuc);
+
+}else if(sonuc>=40){
+    console.log(":İdeal kilonun çok üstünde (morbid obez)" + sonuc);
+}
 */
+
+//! Benzin İstasyonu Uygulaması  
+
+
+// 1-Dizel  : 24.53 
+// 2-Benzin : 22.25
+// 3-LPG    : 11.1
+
+
+
+// Gelen müşteriden alacağımız bilgiler;
+// 1-Yakıt Tipi
+// 2-Yüklenecek yakıt litresi
+
+
+let dizel = 24.53, benzin = 22.25, lpg = 11.1;
+const yeniSatir = "\r\n";
+const yakitMetni = "1-Dizel" + yeniSatir +
+    "2-Benzin" + yeniSatir +
+    "3-LPG" + yeniSatir +
+    "Yakıt türünüzü seçiniz";
+
+let yakitTipi = prompt(yakitMetni);
+if (yakitTipi == "1" || yakitTipi == "2" || yakitTipi == "3") {
+    let yakitLitresi = Number(prompt("Yakıt litresini giriniz"));
+    let bakiye = Number(prompt("Bakiyenizi giriniz"));
+
+    if (yakitTipi == "1") {
+        //DİZEL
+        let odenecekTutar = dizel * yakitLitresi;
+        if (odenecekTutar < bakiye) {
+            //bakiyeniz yeterli
+            bakiye = bakiye - odenecekTutar;
+            alert("Yakıt alma işlemi başarılı" + yeniSatir
+                + "Kalan bakiye : " + bakiye)
+        } else {
+            //bakiye yetersiz
+            alert("Bakiyeniz yeterli değildir" + yeniSatir
+                + "Ödenecek tutar : " + odenecekTutar + yeniSatir
+                + "Bakiye : " + bakiye + yeniSatir
+                + "Eksik tutar : " + (odenecekTutar - bakiye));
+        }
+    } else if (yakitTipi == "2") {
+        //BENZİN
+        let odenecekTutar = benzin * yakitLitresi;
+        if (odenecekTutar < bakiye) {
+            //bakiyeniz yeterli
+            bakiye = bakiye - odenecekTutar;
+            alert("Yakıt alma işlemi başarılı" + yeniSatir
+                + "Kalan bakiye : " + bakiye)
+        } else {
+            //bakiye yetersiz
+            alert("Bakiyeniz yeterli değildir" + yeniSatir
+                + "Ödenecek tutar : " + odenecekTutar + yeniSatir
+                + "Bakiye : " + bakiye + yeniSatir
+                + "Eksik tutar : " + (odenecekTutar - bakiye));
+        }
+    } else if (yakitTipi == "3") {
+        //LPG
+        let odenecekTutar = lpg * yakitLitresi;
+        if (odenecekTutar < bakiye) {
+            //bakiyeniz yeterli
+            bakiye = bakiye - odenecekTutar;
+            alert("Yakıt alma işlemi başarılı" + yeniSatir
+                + "Kalan bakiye : " + bakiye)
+        } else {
+            //bakiye yetersiz
+            alert("Bakiyeniz yeterli değildir" + yeniSatir
+                + "Ödenecek tutar : " + odenecekTutar + yeniSatir
+                + "Bakiye : " + bakiye + yeniSatir
+                + "Eksik tutar : " + (odenecekTutar - bakiye));
+        }
+    }
+}
+else {
+    alert("Lütfen geçerli bir yakıt türü seçiniz!")
+}
