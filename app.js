@@ -519,7 +519,7 @@ if(sonuc<18.5){
 }else if(sonuc>=40){
     console.log(":İdeal kilonun çok üstünde (morbid obez)" + sonuc);
 }
-*/
+
 
 //! Benzin İstasyonu Uygulaması  
 
@@ -597,3 +597,135 @@ if (yakitTipi == "1" || yakitTipi == "2" || yakitTipi == "3") {
 else {
     alert("Lütfen geçerli bir yakıt türü seçiniz!")
 }
+*/
+//!-----------SWİTCH & CASE---------------
+
+
+// let sayi = prompt("Lütfen 1 ile 5 arasında bir sayı giriniz");
+
+// switch(sayi) // "1"  "2"  "3"  "4"  "5"
+// {
+//     case "1" : 
+//         //kodlarınız
+//         console.log("Girilen sayı 1'dir");
+//         break;
+
+//     case "2":
+//             console.log("Girilen sayı 2'dir");
+//         break;
+
+//     case "3":
+//         console.log("Girilen sayı 3'tür");
+//         break;
+
+//     case "4":
+//         console.log("Girilen sayı 4'tür");
+//         break;
+
+//     case "5":
+//         console.log("Girilen sayı 5'dir");
+//         break;
+//     default:
+//         console.log("Girilen sayı 1 ile 5 aralığında olmalıdır!");
+//         break;
+// }
+
+// let yeniSatir = "\r\n"
+// let metin = "1-Pazartesi" + yeniSatir
+//     + "2-Salı" + yeniSatir
+//     + "3-Çarşamba" + yeniSatir
+//     + "4-Perşembe" + yeniSatir
+//     + "5-Cuma" + yeniSatir
+//     + "6-Cumartesi" + yeniSatir
+//     + "7-Pazar"+yeniSatir
+//     +"Lütfen bir seçim yapınız";
+
+
+// let deger = prompt(metin);
+// switch (deger) {
+//     case "1":
+//         console.log("Pazartesi Günü");
+//         break;
+
+//     case "2":
+//         console.log("Salı Günü");
+//         break;
+
+//     case "3":
+//         console.log("Çarşamba Günü");
+//         break;
+
+//     case "4":
+//         console.log("Perşembe Günü");
+//         break;
+
+//     case "5":
+//         console.log("Cuma Günü");
+//         break;
+
+//     case "6":
+//         console.log("Cumartesi Günü");
+//         break;
+
+//     case "7":
+//         console.log("Pazar Günü");
+//         break;
+
+//     default:
+//         console.log("Lütfen geçerli bir değer giriniz!");
+// }
+
+
+
+//?----- ATM UYGULAMASI-------
+
+//   1-Bakiye görüntüleme
+//   2-Para çekme 
+//   3-Para yatırma
+//   4-Çıkış
+
+
+let yeniSatir = "\r\n";
+let bakiye = 1000;
+
+let metin = "1-Bakiye Görüntüleme " + yeniSatir
+    + "2-Para Çekme" + yeniSatir
+    + "3-Para Yatırma" + yeniSatir
+    + "4-Çıkış" + yeniSatir
+    + "Lütfen bir değer seçiniz."
+
+// alert(metin);
+
+let secim = prompt(metin);
+switch (secim) {
+    case "1":
+        alert("Bakiyeniz :" + bakiye);
+        break;
+
+    case "2":
+        let cekilecekTutar = Number(prompt("Çekmek istediğiniz tutarı giriniz :"));
+        if (cekilecekTutar < bakiye) {
+            //başarıldır
+            bakiye = bakiye - cekilecekTutar;
+            alert("Kalan Bakiye : " + bakiye);
+        } else {
+            alert("Bakiyenizden fazla para çekemezsiniz" + yeniSatir
+                + "Bakiyeniz :" + bakiye + " " + "Çekilecek Tutar : " + cekilecekTutar);
+        }
+        break;
+
+    case "3":
+        let yatirilacakTutar = Number(prompt("Yatırılacak Tutar"));
+        bakiye = bakiye + yatirilacakTutar;
+        alert("Güncel bakiyeniz : " + bakiye);
+        break;
+
+    case "4":
+        console.log("Sistemden Çıkış Yapılmıştır..");
+        break;
+
+    default:
+        console.log("Lütfen 1 - 4 arasında değer giriniz !");
+        break;
+}
+
