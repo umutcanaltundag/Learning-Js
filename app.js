@@ -861,4 +861,43 @@ switch (secim){
 
 // let sonuc = a+b+c+d+e;
 
-// console.log("Sonuç :" ,sonuc);
+// console.log("Sonuç " ,sonuc);
+
+*/
+
+
+// 1'den 10'a kadar yazdıralım 
+
+// for(let j= 1; j<=10 ; j++){
+//     console.log(j);
+// }
+
+// 1'den 10'a kadar çiftleri yazdılarım
+
+// for(let j =0; j<=10 ; j=j+2){
+//     console.log(j);
+// }
+
+// 1'den 10'a kadar tekleri yazdıralım
+
+// for(let j =1 ; j<=10 ; j=j+2){
+//     console.log(j);
+// }
+
+// for (let j = 1; j<=10; j++){
+//     if(j%2==1){
+//         console.log("Umut");
+//     }else{
+//         console.log("Can");
+//     }
+// }
+
+//50'den 1'e kadar gidelim ve toplamlarını bulalım.
+
+// let toplam = 0;
+// for(let i= 50; i>=1 ; i--){
+//     toplam+=i;
+//     console.log(i);
+// }
+
+// console.log("Toplam :" , toplam);
