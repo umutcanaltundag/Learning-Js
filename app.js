@@ -863,7 +863,7 @@ switch (secim){
 
 // console.log("Sonuç " ,sonuc);
 
-*/
+
 
 
 // 1'den 10'a kadar yazdıralım 
@@ -899,5 +899,71 @@ switch (secim){
 //     toplam+=i;
 //     console.log(i);
 // }
+
+// console.log("Toplam :" , toplam);
+
+*/
+
+
+// 1'den 10'a kadar yazdıralım
+
+// let sayac = 1; 
+
+// while(sayac<=10){
+//     console.log(sayac);
+//     sayac++;
+// }
+
+
+// 1'den 10'a kadar çiftleri ve tekleri yazdıralım 
+
+// let sayac = 0;
+// while(sayac<=10){
+//     if(sayac%2==0){
+//         console.log(sayac);
+//     }
+//     sayac++;
+// }
+
+
+// let sayac =1;
+// while(true){
+//     console.log(sayac);
+//     if(sayac==7){
+//         break;
+//     }
+//     sayac++;
+// }
+
+
+// 1'den 10'a kadar yazdıralım
+
+// let sayac =1;
+
+// do {
+//     console.log(sayac);
+//     sayac++;
+// } while (sayac<=10); 
+
+
+// let yas =23;
+
+// do {
+//     console.log("Ehliyeti alabilirsiniz");
+// } while (yas>=25);
+
+
+
+
+//1'den 20'ye kadar olan tek sayıların toplamını bulalım
+
+// let sayac = 1;
+// let toplam= 0;
+// do {
+//     if (sayac%2==1){
+//         toplam+=sayac;
+//     }
+//     sayac++;
+// } while (sayac<=20);
 
 // console.log("Toplam :" , toplam);
