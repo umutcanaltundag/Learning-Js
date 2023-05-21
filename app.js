@@ -1041,7 +1041,7 @@ switch (secim){
 // }
 
 
-*/
+
 
 
 //Faktöriyel hesaplama
@@ -1049,10 +1049,29 @@ switch (secim){
 // 5= 5.4.3.2.1 = 120 
 // 6 = 6.5.4.3.2.1 = 720
 
-let sayi = Number(prompt("Bir sayı giriniz"));
-let carpim = 1;
+// let sayi = Number(prompt("Bir sayı giriniz"));
+// let carpim = 1;
 
-for(let i =1 ; i<=sayi ; i++){
-    carpim=carpim*i
-}
-alert("Sonuç  :" + carpim);
+// for(let i =1 ; i<=sayi ; i++){
+//     carpim=carpim*i
+// }
+// alert("Sonuç  :" + carpim);
+
+*/
+
+// 153 - 370 - 407 sayısı armstrong
+
+//153 =1*1*1 + 5*5*5 + 3*3*3 + = 1 + 125+27 = 153
+
+// let sayi =prompt("Sayı giriniz");
+// let toplam =0;
+// for( let i=0; i<sayi.length;  i++){
+//     let rakam = sayi.charAt(i);
+//     toplam+=rakam*rakam*rakam;
+// }
+
+// if(Number(sayi)==toplam ){
+//     alert("Armstrong sayısıdır :)")
+// }else {
+//     alert("Armstrong sayısı değildir");
+// }
