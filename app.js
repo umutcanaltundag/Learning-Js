@@ -1076,7 +1076,7 @@ switch (secim){
 //     alert("Armstrong sayısı değildir");
 // }
 
-*/
+
 
 
 //Parametresiz ve geriye değer döndürmeyen metot tanımlamak
@@ -1094,3 +1094,34 @@ switch (secim){
 //     console.log(5+7); 
 // }
 // topla();
+
+*/
+
+//Parametreli metot tanımlamak
+
+// function yazdir(isim , soyisim) {
+//     debugger;
+//     console.log(isim + " " + soyisim);
+// }
+
+// debugger;
+// yazdir("Umut","Can"); 
+// yazdir("Atlas","Doğukan");
+
+// cube(5);
+// cube(3);
+// function cube(sayi){
+//     console.log(sayi*sayi*sayi);
+// }
+
+
+// let yas =Number(prompt("Yaşınızı giriniz"));
+// kontrolEt(yas);
+
+// function kontrolEt(yas){
+//     if(yas>=18){
+//         console.log("Ehliyeti alabilirsiniz");
+//     }else{
+//         console.log("Ehliyeti alamazsınız");
+//     }
+// }
