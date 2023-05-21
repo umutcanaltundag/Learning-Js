@@ -1057,7 +1057,7 @@ switch (secim){
 // }
 // alert("Sonuç  :" + carpim);
 
-*/
+
 
 // 153 - 370 - 407 sayısı armstrong
 
@@ -1075,3 +1075,22 @@ switch (secim){
 // }else {
 //     alert("Armstrong sayısı değildir");
 // }
+
+*/
+
+
+//Parametresiz ve geriye değer döndürmeyen metot tanımlamak
+
+// function yazdir(){
+//     debugger;   
+//     console.log("Umut");
+// }
+
+// debugger;
+// yazdir();
+// yazdir();
+
+// function topla (){
+//     console.log(5+7); 
+// }
+// topla();
