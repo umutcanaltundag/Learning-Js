@@ -1095,7 +1095,7 @@ switch (secim){
 // }
 // topla();
 
-*/
+
 
 //Parametreli metot tanımlamak
 
@@ -1124,4 +1124,37 @@ switch (secim){
 //     }else{
 //         console.log("Ehliyeti alamazsınız");
 //     }
+// }
+
+
+*/
+
+
+// Geriye değer döndüren metot tanımlamak --return = geriye dönmek
+
+
+// let donenDeger =cube(2);
+// kareAl(donenDeger);
+
+
+// function kareAl(sayi){
+//     let sonuc =sayi*sayi;
+//     console.log(sonuc);
+// }
+
+// // 1. Bir değeri metodun dışarısına çıkarmak , taşımak için kullanılır.
+// // 2. Bir metodu bitiren anahtar kelimedir.
+
+// function cube(sayi){
+//     let sonuc = sayi*sayi*sayi;
+//     return sonuc;
+//     console.log("Umut");
+// }
+
+
+
+// yazdir();
+// function yazdir(){
+//     console.log("Umut");
+//     // void = geriye değer döndürmeyen demektir.
 // }
