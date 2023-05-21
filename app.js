@@ -1001,7 +1001,7 @@ switch (secim){
 //     console.log(sayac); 
 // }
 
-*/
+
 
 
 //  Çarpım tablosu
@@ -1025,17 +1025,34 @@ switch (secim){
 
 //15 
 
-let sayi =Number(prompt("Lütfen bir sayı giriniz :"));  
-let sonuc = true;
-for(let i=2; i<=Math.floor(sayi/2); i++){
-    if(sayi%i==0){
-         //Asal değildir
-         sonuc=false;
-         break;
-    }
+// let sayi =Number(prompt("Lütfen bir sayı giriniz :"));  
+// let sonuc = true;
+// for(let i=2; i<=Math.floor(sayi/2); i++){
+//     if(sayi%i==0){
+//          //Asal değildir
+//          sonuc=false;
+//          break;
+//     }
+// }
+// if(sonuc){
+//     alert(sayi +" asaldır.");
+// }else {
+//     alert(sayi +" asal değildir!");
+// }
+
+
+*/
+
+
+//Faktöriyel hesaplama
+
+// 5= 5.4.3.2.1 = 120 
+// 6 = 6.5.4.3.2.1 = 720
+
+let sayi = Number(prompt("Bir sayı giriniz"));
+let carpim = 1;
+
+for(let i =1 ; i<=sayi ; i++){
+    carpim=carpim*i
 }
-if(sonuc){
-    alert(sayi +" asaldır.");
-}else {
-    alert(sayi +" asal değildir!");
-}
+alert("Sonuç  :" + carpim);
