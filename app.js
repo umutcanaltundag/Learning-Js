@@ -1185,7 +1185,7 @@ switch (secim){
 //     console.log("Harf sayısı : " + toplam );
 // }
 
-*/
+
 
 
 // Mükemmel Sayı Uygulaması
@@ -1213,3 +1213,34 @@ switch (secim){
 //         console.log("Mükemmel sayı değildir!!");
 //     }
 // }
+
+*/
+
+//!----DİZİLER-----
+
+// let sayilar =[0,1,2,3,4,5,"Umut",7,8,9,"Can"];
+
+// sayilar[sayilar.length-1]="Mehmet";
+
+// console.log(sayilar[10]);
+
+
+// let isimler= ["Enes" , "Kübra" , "Bilal" , "Yusuf"];
+// isimler[2] = "Umut";
+// console.log(isimler[2]);
+
+// let karisikDizi= ["1", "Umut", 5.7,true, null , undefined];
+// console.log(karisikDizi[3]);
+
+
+
+// let dizi1 = ["Umut","Can"];
+// let dizi2 = new Array("Umut", "Can");
+
+//number , string , boolean , undefined , null , object(array)
+
+// console.log(typeof dizi2);
+
+// For döngüsü , While döngüsü , Do while , Foreach
+
+//foreach : dizilerde kullanıyoruz.
