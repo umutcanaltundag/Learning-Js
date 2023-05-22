@@ -1244,3 +1244,22 @@ switch (secim){
 // For döngüsü , While döngüsü , Do while , Foreach
 
 //foreach : dizilerde kullanıyoruz.
+
+//? FOREACH DÖNGÜSÜ
+
+// let isimler = ["Atlas","Doğukan","Ege","Can","Sude","Ezgi"];
+
+// let sayac = 0;
+// while(sayac<isimler.length){
+//     console.log(isimler[sayac]);
+//     sayac++; 
+// }
+
+
+// for(let i=0 ; i<isimler.length ; i++){
+//     console.log(isimler[i]);
+// }
+
+// isimler.forEach(function(isim){
+//     console.log(isim);
+// });
