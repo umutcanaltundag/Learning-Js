@@ -1263,3 +1263,127 @@ switch (secim){
 // isimler.forEach(function(isim){
 //     console.log(isim);
 // });
+
+
+//!--------- Dizinin Metotları-------
+
+//   push    : dizinin sonuna eleman ekler , ayrıca dizinin uzunluğunu döner
+//   unshift : dizinin başına eleman ekler , eleman sayısını geriye döner
+
+//   pop     : dizinin sonundan eleman siler , eleman sayısını döner
+//   shift   : dizinin başından eleman siler , eleman sayısını döner
+
+//   splice(index,incdex)  :eleman eklemek ve silmek için kullanılır.
+
+//   toString: diziyi stringe çevirebiliriz.
+//   join    : diziyi stringe çevirir . Farkı ise araya eleman ekleyebiliriz
+
+//   concat  : dizileri birleştirmek için kullanılır.
+//   slice(dilimlemek)   : diziyi istenilen yerden bölüp yeni bir dizi oluşturur.
+//   length  : dizinin uzunluğunu verir.
+//   reverse : dizinin elemanlarını ters çevirmek
+//   split(bölmek)   : belirli bir ifadeye göre bölüp diziye çevirmek.
+//   indexOf : elemanın index numarasını verir.
+//   includes: verilen elemanı içeriyor mu ona bakar
+
+
+let arabalar =  ["Bmw","Audi","Mercedes","Porsche","Supra"];
+
+// let arabalar1 = ["Bmw","Audi","Mercedes","Porshce","Supra"];
+// let arabalar2 = ["Honda,Tofaş"];
+
+// PUSH METOT
+
+// console.log(arabalar.length);
+// arabalar.push("Lamborghini")
+// console.log(arabalar);
+
+// UNSHİFT METOT
+
+// arabalar.unshift("Honda")
+// console.log(arabalar);
+
+// POP METOT
+
+// let uzunluk = arabalar.pop();
+// console.log(arabalar);
+// console.log(uzunluk);
+
+
+// SHİFT METOT
+
+// let silinenEleman = arabalar.shift();
+// console.log(arabalar);
+// console.log(silinenEleman);
+
+
+//SPLİCE METOT
+
+// console.log(arabalar);
+// arabalar.splice(2,0,"Honda");
+// console.log(arabalar);
+
+// arabalar.splice(1,2);
+// console.log(arabalar);
+
+// arabalar.splice(2,2,"Honda");
+// console.log(arabalar);
+
+
+//TOSTRİNG METOT
+// console.log(typeof arabalar);
+// let stringArabalar = arabalar.toString();
+// console.log(typeof stringArabalar);
+// console.log(stringArabalar);
+
+
+
+//JOİN METOT
+// let stringArabalar = arabalar.join(" / ");
+// console.log(stringArabalar);
+
+
+//CONCAT METOT
+// let birlesmisDizi = arabalar1.concat(arabalar2);
+// console.log(birlesmisDizi);
+
+
+//SLİCE METOT
+// console.log(arabalar);
+// let ayriDizi = arabalar.slice(2);
+// console.log(ayriDizi);
+
+
+//LENGHT ÖZELLİK 
+// console.log(arabalar.length);
+
+
+//REVERSE METOT
+// console.log(arabalar);
+// arabalar.reverse();
+// console.log(arabalar);
+
+
+//SPLİT METOT
+// let isimler = "Enes,Ali,Veli"
+// let isimlerDizi = isimler.split(",");
+// console.log(isimlerDizi);
+
+
+
+//INDEXOF METOT
+// let index = arabalar.indexOf("Bmw");
+// if(index==0){
+//     console.log("belirtilen eleman vardır");
+// }else{
+//     console.log("belirtilen eleman yoktur");
+// }
+
+
+//INCLUDES METOT
+// let sonuc = arabalar.includes("Porsche");
+// if(sonuc){
+//     console.log("Eleman vardır.");
+// }else{
+//     console.log("Eleman yoktur!");
+// }
