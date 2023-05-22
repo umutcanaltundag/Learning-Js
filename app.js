@@ -1127,7 +1127,7 @@ switch (secim){
 // }
 
 
-*/
+
 
 
 // Geriye değer döndüren metot tanımlamak --return = geriye dönmek
@@ -1157,4 +1157,30 @@ switch (secim){
 // function yazdir(){
 //     console.log("Umut");
 //     // void = geriye değer döndürmeyen demektir.
+// }
+
+*/
+
+
+// Kelime sayısı bulma uygulaması
+
+// let metin ="Şuanda Urfa da JavaScript Eğitimi Almaktayım.";
+
+// let harf  = prompt("Harfi giriniz");
+
+// let sonuc =bul(harf);
+// alert("Harf sayısı : " + sonuc);
+
+// bul("a");
+// bul("e");
+// bul("s");
+
+// function bul (harf){
+//     let toplam =0;
+//     for(let i =0; i<metin.length ; i++) {
+//         if(metin.charAt(i).toLocaleLowerCase()===harf.toLocaleLowerCase()){
+//             toplam+=1;
+//         }
+//     }
+//     console.log("Harf sayısı : " + toplam );
 // }
