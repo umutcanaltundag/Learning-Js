@@ -1635,7 +1635,7 @@ let tarih ="2023";
 // console.log(kurs.endsWith("Kursu"));
 
 
-*/
+
 
 
 // Math Sınıfı Metotları 
@@ -1687,3 +1687,52 @@ let tarih ="2023";
 // console.log(sonuc);
 
 // console.log(Math.floor(Math.random()*100));
+
+*/
+
+
+// Date Kullanımı 
+
+// let tarih = new Date(2007,11,19,14,38,24);
+// console.log(tarih);
+
+// let tarih = new Date();
+// console.log(tarih.toString());
+// console.log(typeof tarih.toString());
+
+// console.log(tarih);
+
+// console.log(tarih.getFullYear());
+
+// console.log(tarih.getDate());
+
+// console.log(tarih.getDay());
+
+// console.log(tarih.getHours();
+
+// console.log(tarih.getMilliseconds());
+
+// console.log(tarih.getMinutes());
+
+// console.log(tarih.getMonth()+1);
+
+// console.log(tarih.getSeconds());
+
+// console.log(tarih.toLocaleDateString());
+
+// console.log(tarih.toLocaleTimeString());
+
+// console.log(tarih.toLocaleString());
+
+
+//Set Metotları
+
+// console.log(tarih);
+// tarih.setHours(15);
+// tarih.setDate(26);
+// tarih.setMonth(11);
+// tarih.setMinutes(50);
+
+// tarih.setHours(tarih.getHours()+2)
+// console.log(tarih);
+
