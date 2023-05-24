@@ -1539,7 +1539,7 @@ if (rafKod != null) {
     alert("Girdiğiniz kitap kütüphanemizde bulunmamaktadır :( ")
 }
 
-*/
+
 
 
 //! String Sınıfının Metotları
@@ -1633,3 +1633,57 @@ let tarih ="2023";
 //ENDS-WİTH
 // console.log(kurs);
 // console.log(kurs.endsWith("Kursu"));
+
+
+*/
+
+
+// Math Sınıfı Metotları 
+
+// 1. Floor : verilen ondalıklı sayıyı aşağı yuvarlar
+// 2. Ceil  : verilen ondalıklı sayıyı yukarı yuvarlar.
+// 3. Round : kendisine en yakın tam sayıyı kontrol ederek aşağı ya da yukarı yuvarlama yapar
+
+// 4. Max   :  verilen sayı değerlerinin en büyüğünü bulur
+// 5. Min   :  verilen sayı değerlerinin en küçüğünü bulur
+
+// 6. Random :  
+// 7. Abs  : Mutlak deger almak için kullanılır
+// 8. Sqrt : karekök almak için kullanılır
+// 9. Pow  : üssünü almak için kullanılır
+
+// ---> PI Sayısı
+
+// console.log(window);
+
+// let a =3.50 ;
+// let b =-12 ;
+
+// console.log(Math.floor(a));
+
+// console.log(Math.ceil(a));
+
+// console.log(Math.round(a));
+
+// console.log(Math.max(1,2,3,4,15));
+
+// console.log(Math.min(1,2,3,4));
+
+// console.log(Math.abs(b));
+
+// console.log(Math.sqrt(81));
+
+// console.log(Math.pow(5,4));
+
+// console.log(Math.PI);
+
+// let randomDeger = Math.random();
+// let sonuc = randomDeger*1000000;
+// let sonucYuvarla = Math.floor(sonuc);
+
+
+// console.log(randomDeger);
+// console.log(sonucYuvarla);
+// console.log(sonuc);
+
+// console.log(Math.floor(Math.random()*100));
