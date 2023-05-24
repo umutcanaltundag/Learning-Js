@@ -1441,7 +1441,7 @@ let arabalar =  ["Bmw","Audi","Mercedes","Porsche","Supra"];
 //     });
 // }
 
-*/
+
 
 
 let kitap1 = { isim: "Her Şeyi Düşünme", yazar: "Anne Bogel", fiyat: 25, raf: "1.5.RAF" }
@@ -1538,3 +1538,98 @@ if (rafKod != null) {
 } else {
     alert("Girdiğiniz kitap kütüphanemizde bulunmamaktadır :( ")
 }
+
+*/
+
+
+//! String Sınıfının Metotları
+
+let kurs ="Modern Web Geliştirme Kursu";
+let tarih ="2023";
+
+// charAt()
+// concat()
+// indexof()
+// lastindexof()
+// toUpperCase()
+// toLowerCase()
+// trim()
+// slice()
+// substring()
+// replace()
+// split()
+// valueOf()
+// startsWith()
+// endsWith();
+
+
+//CHAR-AT 
+// let karakter = kurs.charAt(5)
+// console.log(karakter);
+
+
+//CONCAT
+// let sonuc = kurs.concat( " ",tarih, "Enes");
+// console.log(sonuc);
+
+// INDEX-OF
+// let index = kurs.indexOf("W");
+// console.log(index);
+
+
+//LAST-INDEX-OF
+// let index = kurs.lastIndexOf("Kursu");
+// console.log(index);
+
+
+//TO-UPPER-CASE
+// let sonuc = kurs.toUpperCase();
+// console.log(kurs);
+// console.log(sonuc);
+
+
+//TO-LOWER-CASE
+// let sonuc = kurs.toLowerCase();
+// console.log(sonuc);
+
+
+// TRİM
+// console.log(kurs.trim());
+
+
+//SLİCE
+// console.log(kurs);
+// console.log(kurs.slice(22,27));
+
+
+
+//SUBSTRİNG 
+// console.log(kurs);
+// console.log(kurs.substring(0,5));
+
+
+
+//REPLACE
+// console.log(kurs);
+// console.log(kurs.replace("Modern","Güncel"));
+
+
+
+//SPLİT
+// console.log(kurs);
+// let dizi = kurs.split(" ");
+// console.log(dizi);
+
+
+//VALUE-OF
+// console.log(kurs.valueOf());
+
+
+//STARTS-WİTH
+// console.log(kurs);
+// console.log(kurs.startsWith("M"));
+
+
+//ENDS-WİTH
+// console.log(kurs);
+// console.log(kurs.endsWith("Kursu"));
