@@ -1775,3 +1775,105 @@ let tarih ="2023";
 // console.log(dizi1);
 // console.log(dizi2);
 // console.log(dizi3);
+
+
+//! Selectors (Seçiciler) - Style Özellikleri
+
+//classname , id , tag name
+
+//getElementById : id ye göre elementi yakalar.
+//getElementByClassName : class ismine göre yakalar.
+// getElementByTagName : etiket ismine göre yakalar.
+
+// const button = document.getElementById("todoAddButton");
+
+// console.log(button);
+// console.log(button.id);
+// console.log(button.getAttribute("id"));
+
+// console.log(button.className);
+// console.log(button.getAttribute("class"));
+
+// const classListesi = button.classList[3];
+// const classListesi = button.classList[2];
+
+// const classListesi = button.classList;
+
+// classListesi.forEach(function(className){
+//     console.log(className);
+// })
+
+// console.log(classListesi);
+
+// let buttonText = button.textContent;
+// let buttonText2 = button.innerHTML;
+
+// console.log(buttonText);
+// console.log(buttonText2);
+
+// button.textContent="<b>Todo Ekleyin</b>";
+
+// const todoList =Array.from( document.getElementsByClassName("list-group-item"));
+// todoList.forEach(function(todo) {
+//     console.log(todo.textContent );
+// });
+// console.log(todoList);
+
+
+// const forms = Array.from(document.getElementsByTagName("form"));
+// forms.forEach(function(form){
+//     console.log(form);
+// })
+// console.log(forms[1]);
+
+
+// const todoList = document.getElementsByTagName("li");
+// console.log(todoList);
+
+// getElementById - getElementByClassName - getElementByTagName
+
+// querySelector - querySelectorAll
+
+//! const clearButton = document.querySelector("#todoClearButton");
+//! console.log(clearButton);
+
+// console.log(document.getElementById("todoClearButton"));
+
+//! const todoList = document.querySelector(".list-group")
+//! console.log(todoList);
+
+
+//! const todoList = document.querySelectorAll(".list-group-item")[1];
+//! console.log(todoList);
+
+
+// const todoList =Array.from(document.querySelectorAll("li:nth-child(even)"));
+
+// todoList.forEach(function(todo){
+//     todo.style.backgroundColor = "lime";
+// })
+
+// console.log(todoList);
+
+// const todo = document.querySelectorAll(".list-group-item")[0];
+// const todoList = document.querySelector(".list-group")
+// const clearButton =document.querySelector("#todoClearButton")
+
+// console.log(clearButton);
+
+// todo.style.color = "red";
+// todo.style.backgroundColor = "lightblue";
+// todo.style.fontWeight = "bolder";
+// todo.style.paddingTop = "20px";
+// todo.style.paddingLeft = "80px";
+
+// todoList.style.marginTop = "60px";
+// // todoList.style.marginLeft = "100px";
+
+
+// clearButton.style.backgroundColor="red";
+// clearButton.style.fontWeight = "bold";
+// clearButton.style.letterSpacing = "5px";
+// clearButton.style.borderRadius="80px"; 
+
+
