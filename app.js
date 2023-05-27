@@ -2023,6 +2023,33 @@ let tarih ="2023";
 //     console.log(e.type);
 // }
 
+*/
 
 
+//! Klavye Eventları 
 
+//keypress : harf ve sayılarda geçerlidir
+
+//keydown : herşeyde çalışır
+
+//keyup  : elini tuştan kaldırdığında çalışır
+
+// document.addEventListener("keydown", run);
+
+// function run(e) {
+//     console.log(e.keyCode);
+//     if (e.keyCode == 116) {
+//         alert("Sayfa yenileme engellendi!");
+//     }
+//     e.preventDefault();
+// }
+
+
+// const cardTitle = document.querySelectorAll(".card-title")[0];
+// const input = document.querySelector("#todoName");
+// console.log(input);
+// input.addEventListener("keyup",run);
+
+// function run(e){
+//     cardTitle.textContent = e.target.value;
+// }
