@@ -1926,7 +1926,7 @@ let tarih ="2023";
 
 // console.log(value);
 
-*/
+
 
 // ! Dinamik olarak element oluşturmak
 
@@ -1965,6 +1965,19 @@ let tarih ="2023";
 // todoLink.appendChild(i);
 // todo.appendChild(todoLink);
 
-
-
 // console.log(link);
+
+*/
+
+
+// Elementleri Değiştirmek 
+
+// const cardBody = document.querySelectorAll(".card-body")[1];
+// <h5 class="card-title">Todo Listesi </h5>
+
+// const newTitle = document.createElement("h2");
+// newTitle.className="card-title";
+// newTitle.textContent="Todo Listesi - Yeni";
+
+// cardBody.removeChild(newTitle,cardBody.childNodes)[1]; 
+
