@@ -1928,7 +1928,7 @@ let tarih ="2023";
 
 */
 
-// //! Dinamik olarak element oluşturmak
+// ! Dinamik olarak element oluşturmak
 
 // const cardBody = document.querySelectorAll('.card-body')[1];
 // const todoList = document.querySelector(".list-group");
