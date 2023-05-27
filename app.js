@@ -1736,7 +1736,7 @@ let tarih ="2023";
 // tarih.setHours(tarih.getHours()+2)
 // console.log(tarih);
 
-*/
+
 
 // Değer ve Referans Tipler
 
@@ -1926,4 +1926,45 @@ let tarih ="2023";
 
 // console.log(value);
 
+*/
 
+// //! Dinamik olarak element oluşturmak
+
+// const cardBody = document.querySelectorAll('.card-body')[1];
+// const todoList = document.querySelector(".list-group");
+
+// const link = document.createElement("a");
+// link.id = "goBlogWebSite";
+// link.className = "btn btn-dark btn-sm mt-3";
+// link.href = "https://www.instagram.com";
+// link.target = "blank";
+// link.innerHTML = 'İnstagrama git';
+
+// // <li class="list-group-item d-flex justify-content-between">Todo 3
+// // <a href="#" class="delete-item">
+// //    <i class="fa fa-remove"></i>
+// // </a>
+// // </li>
+
+// cardBody.appendChild(link);
+
+
+// const todo = document.createElement("li");
+// const todoLink = document.createElement("a");
+// const i = document.createElement("i");
+
+// todo.className = "list-group-item d-flex justify-content-between";
+// todo.innerHTML = "Todo 5";
+
+// todoLink.href = "#";
+// todo.className = "delete-item";
+
+
+// i.classList = "fa fa-remove";
+
+// todoLink.appendChild(i);
+// todo.appendChild(todoLink);
+
+
+
+// console.log(link);
