@@ -2082,73 +2082,238 @@ let tarih ="2023";
 //     console.log(e.type);
 // }
 
-*/
+
 
 
 //! Session Storage Kullanımı 
-//Session Storage
 
-//Değer Ekleme
-// sessionStorage.setItem("350","Enes");
-// sessionStorage.setItem("216","Yasin");
-// sessionStorage.setItem("154","Bilal");
-// sessionStorage.setItem(552,37);
+Değer Ekleme
+sessionStorage.setItem("350","Enes");
+sessionStorage.setItem("216","Yasin");
+sessionStorage.setItem("154","Bilal");
+sessionStorage.setItem(552,37);
 
-//Değer Silme
-// sessionStorage.removeItem("154");
+Değer Silme
+sessionStorage.removeItem("154");
 
-// let value =  sessionStorage.getItem("350");
-// if(value ===null){
-//     console.log("Değer bulunamadı.");
-// }else{
-//     console.log("Değer bulundu :",value);
-// }
-
-
-//Hepsini Silme
-// sessionStorage.clear();
+let value =  sessionStorage.getItem("350");
+if(value ===null){
+    console.log("Değer bulunamadı.");
+}else{
+    console.log("Değer bulundu :",value);
+}
 
 
-// let value = sessionStorage.getItem(552);
-// console.log(typeof value);
+Hepsini Silme
+sessionStorage.clear();
 
 
-//Session Storage - Array Yazdırma
-
-// let names = ["Ali","Enes","Kübra","Adem","Ayşenur"];
-// sessionStorage.setItem("names",JSON.stringify(names));
-
-// let value = JSON.parse(sessionStorage.getItem("names"));
-// value.forEach(function(name){
-//     console.log(name);
-// })
-
-//Local Storage Kullanımı
-
-//Değer Ekleme
-// localStorage.setItem("motion1","Push up");
-// localStorage.setItem("motion2","Barfix");
-// localStorage.setItem("motion3","Burpee");
-// localStorage.setItem("motion4","Squat");
+let value = sessionStorage.getItem(552);
+console.log(typeof value);
 
 
-//Değeri Almak
+Session Storage - Array Yazdırma
 
-// let value = localStorage.getItem("motion1");
-// console.log(value);
+let names = ["Ali","Enes","Kübra","Adem","Ayşenur"];
+sessionStorage.setItem("names",JSON.stringify(names));
 
-//Değer Silmek
-// localStorage.removeItem("motion4");
+let value = JSON.parse(sessionStorage.getItem("names"));
+value.forEach(function(name){
+    console.log(name);
+})
 
-//Tümünü Temizle
-// localStorage.clear();
+Local Storage Kullanımı
 
-// localStorage.clear();
-// let motions = ["Push up","Barfix","Burpee","Squat","Chin Up"];
-// localStorage.setItem("motions",JSON.stringify(motions));
+Değer Ekleme
+localStorage.setItem("motion1","Push up");
+localStorage.setItem("motion2","Barfix");
+localStorage.setItem("motion3","Burpee");
+localStorage.setItem("motion4","Squat");
 
-// let value =  JSON.parse(localStorage.getItem("motions"));
 
-// value.forEach(function(motion){
-//     console.log(motion);
-// });
+Değeri Almak
+
+let value = localStorage.getItem("motion1");
+console.log(value);
+
+Değer Silmek
+localStorage.removeItem("motion4");
+
+Tümünü Temizle
+localStorage.clear();
+
+localStorage.clear();
+let motions = ["Push up","Barfix","Burpee","Squat","Chin Up"];
+localStorage.setItem("motions",JSON.stringify(motions));
+
+let value =  JSON.parse(localStorage.getItem("motions"));
+
+value.forEach(function(motion){
+    console.log(motion);
+});
+
+*/
+
+
+//Tüm Elementleri Seçmek
+
+const form = document.querySelector("#todoAddForm");
+const addInput = document.querySelector("#todoName");
+const todoList = document.querySelector(".list-group");
+const firstCardBody = document.querySelectorAll(".card-body")[0];
+const secondCardBody = document.querySelectorAll(".card-body")[1];
+const clearButton = document.querySelector("#clearButton");
+const filterInput = document.querySelector("#todoSearch");
+
+let todos = [];
+
+runEvents();
+
+function runEvents() {
+    form.addEventListener("submit", addTodo);
+    document.addEventListener("DOMContentLoaded",pageLoaded);
+    secondCardBody.addEventListener("click",removeTodoToUI);
+    clearButton.addEventListener("click",allTodosEverywhere);
+    filterInput.addEventListener("keyup",filter);
+}
+
+function pageLoaded(){
+    checkTodosFromStorage();
+    todos.forEach(function(todo){
+       addTodoToUI(todo);
+    });
+}
+
+function filter(e){
+    const filterValue = e.target.value.toLowerCase().trim();
+    const todoListesi = document.querySelectorAll(".list-group-item");
+    
+    if(todoListesi.length>0){
+        todoListesi.forEach(function(todo){
+            if(todo.textContent.toLowerCase().trim().includes(filterValue)){
+                //
+                todo.setAttribute("style","display : block");
+            }else{
+                todo.setAttribute("style","display : none !important");
+            }
+        });
+
+    }else{
+        showAlert("warning","Filtreleme yapmak için en az bir todo olmalıdır!");
+    }
+
+}
+
+function allTodosEverywhere(){
+   const todoListesi = document.querySelectorAll(".list-group-item");
+   if(todoListesi.length>0){
+    //Ekrandan Silme
+    todoListesi.forEach(function(todo){
+        todo.remove();
+    });
+
+    //Storage'dan Silme
+    todos=[];
+    localStorage.setItem("todos",JSON.stringify(todos));
+    showAlert("success","Başarılı bir şekilde silindi");
+   }else{
+    showAlert("warning","Silmek için en az bir todo olmalıdır");
+   }
+}
+
+function removeTodoToUI(e){
+    if(e.target.className==="fa fa-remove"){
+        //Ekrandan Silme
+       const todo = e.target.parentElement.parentElement;
+       todo.remove();
+
+       //Storage'dan Silme
+       removeTodoToStorage(todo.textContent);
+       showAlert("success","Todo başarıyla silindi.");
+    }
+}
+
+function removeTodoToStorage(removeTodo){
+    checkTodosFromStorage();
+    todos.forEach(function(todo,index){
+        if(removeTodo===todo){
+            todos.splice(index,1);
+        }
+    });
+    localStorage.setItem("todos",JSON.stringify(todos));
+}
+
+function addTodo(e) {
+    const inputText = addInput.value.trim();
+    if (inputText == null || inputText == "") {
+        showAlert("warning", "Lütfen boş bırakmayınız!");
+    } else {
+        //Arayüze ekleme
+        addTodoToUI(inputText);
+        addTodoToStorage(inputText);
+        showAlert("success", "Todo Eklendi.");
+    }
+
+    //storage ekleme
+    e.preventDefault();
+}
+
+function addTodoToUI(newTodo) {
+    /*
+<li class="list-group-item d-flex justify-content-between">Todo 1
+                            <a href="#" class="delete-item">
+                                <i class="fa fa-remove"></i>
+                            </a>
+                        </li>
+                        */
+    const li = document.createElement("li");
+    li.className = "list-group-item d-flex justify-content-between";
+    li.textContent = newTodo;
+
+    const a = document.createElement("a");
+    a.href = "#";
+    a.className = "delete-item";
+
+    const i = document.createElement("i");
+    i.className = "fa fa-remove";
+
+    a.appendChild(i);
+    li.appendChild(a);
+    todoList.appendChild(li);
+
+    addInput.value = "";
+
+
+
+}
+
+function addTodoToStorage(newTodo) {
+    checkTodosFromStorage();
+    todos.push(newTodo);
+    localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function checkTodosFromStorage() {
+    if (localStorage.getItem("todos") === null) {
+        todos = [];
+    } else {
+        todos = JSON.parse(localStorage.getItem("todos"));
+    }
+}
+
+function showAlert(type, message) {
+    /*
+    <div class="alert alert-warning" role="alert">
+    This is a warning alert—check it out!
+  </div>*/
+    const div = document.createElement("div");
+    //   div.className="alert alert-"+type;
+    div.className = `alert alert-${type}`; //litirel template
+    div.textContent = message;
+
+    firstCardBody.appendChild(div);
+
+    setTimeout(function(){
+        div.remove();
+    },2500);
+}
