@@ -2152,7 +2152,7 @@ value.forEach(function(motion){
     console.log(motion);
 });
 
-*/
+
 
 
 //Tüm Elementleri Seçmek
@@ -2259,13 +2259,13 @@ function addTodo(e) {
 }
 
 function addTodoToUI(newTodo) {
-    /*
+    
 <li class="list-group-item d-flex justify-content-between">Todo 1
                             <a href="#" class="delete-item">
                                 <i class="fa fa-remove"></i>
                             </a>
                         </li>
-                        */
+                        
     const li = document.createElement("li");
     li.className = "list-group-item d-flex justify-content-between";
     li.textContent = newTodo;
@@ -2302,10 +2302,10 @@ function checkTodosFromStorage() {
 }
 
 function showAlert(type, message) {
-    /*
+    
     <div class="alert alert-warning" role="alert">
     This is a warning alert—check it out!
-  </div>*/
+  </div>
     const div = document.createElement("div");
     //   div.className="alert alert-"+type;
     div.className = `alert alert-${type}`; //litirel template
@@ -2317,3 +2317,34 @@ function showAlert(type, message) {
         div.remove();
     },2500);
 }
+
+*/
+
+//! Arrow Function
+
+// function yazdir(){
+//     console.log("Merhaba");
+// }
+
+// yazdir();
+
+
+// const yazdir =()=>{
+//     console.log("Merhaba");
+// }
+// yazdir();
+
+
+// const yazdir = (firstName,lastName)=> console.log("Merhaba",firstName,lastName);
+
+// yazdir("Umut","Can")
+
+// const yazdir = firstName => console.log("Merhaba",firstName);
+// yazdir("Umut");
+
+const kupAl = (x)=>  x*x*x
+
+// document.addEventListener("click",()=>{
+// })
+
+console.log("Değer" , kupAl(3));
