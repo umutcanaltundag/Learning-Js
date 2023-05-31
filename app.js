@@ -2399,7 +2399,7 @@ console.log("Değer" , kupAl(3));
 
 // console.log(firstName, lastName, salary, age)
 
-*/
+
 
 //! Spread Operatörü
 
@@ -2440,3 +2440,29 @@ console.log("Değer" , kupAl(3));
 // const array2 = [...array1]
 
 // console.log(array2);
+
+*/
+
+
+//! For in & For of döngüleri 
+
+// let names = ["Umut", "Emir", "Ecrin", "Fatma", "Ceylin"];
+
+// names.forEach(function(name){
+//     console.log(name);
+// })
+// names.forEach(name => console.log(name))
+
+
+// For in döngüsü
+// değişken tanımlama , in , diziİsmi
+
+// for (let name in names) {
+//     console.log(name, names[name]);
+// }
+
+//For of döngüsü
+
+// for (let isim of names) {
+    // console.log(isim, names.indexOf(isim));
+// }
