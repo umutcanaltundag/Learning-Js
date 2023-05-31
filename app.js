@@ -2466,11 +2466,11 @@ console.log("Değer" , kupAl(3));
     // console.log(isim, names.indexOf(isim));
 // }
 
-*/
+//! MAP KULLANIMI
 
 //let array = [1,2,3]
 
-const map1 = new Map();
+// const map1 = new Map();
 
 //SET
 // map1.set(1, "Enes")
@@ -2478,10 +2478,10 @@ const map1 = new Map();
 // map1.set([1, 2, 3,], { firstName: "Umut", lastName: "Can" })
 // map1.set(true,"5")
 
-map1.set(34, "İstanbul")
-map1.set(35, "İzmir")
-map1.set(06, "Ankara")
-map1.set(01, "Adana")
+// map1.set(34, "İstanbul")
+// map1.set(35, "İzmir")
+// map1.set(06, "Ankara")
+// map1.set(01, "Adana")
 
 //GET
 // console.log(map1.get(34));
@@ -2573,4 +2573,63 @@ map1.set(01, "Adana")
 // map1.set(key,"Array")
 
 // console.log(map1.get(key))
+
+*/
+
+
+//! Set Kullanımı
+
+// const set = new Set();
+
+//add metodu
+
+// set.add("true")
+// set.add(3.14)
+// set.add("Umut")
+// set.add("Umut")
+// set.add("Umut")
+// set.add("Umut")
+// set.add("Umut")
+// set.add("Umut")
+// set.add(5)
+// set.add({username :"Umut" , password :"1"});
+// set.add([1,2,3,4])
+
+
+//Size
+// console.log(set.size);
+
+
+
+//Delete
+// set.delete("Umut")
+// set.delete(5)
+// set.delete([1,2,3,4])
+// console.log(set.size);
+
+
+//Has
+// console.log(set.has("Can"));
+
+
+//For of döngüsü
+// for(let value of set){
+//     console.log(value);
+// }
+
+// const values = Array.from(set);
+// values.forEach((value)=>{
+// console.log(value);
+// })   
+
+
+//Set'den  array oluşturma
+// const values =Array.from(set);
+
+
+//Array'den set oluşturna
+// let array = [1,"Umut",true,"Mustafa",15,[1,2,3]]
+// const newSet = new Set(array)
+// console.log(newSet);
+
 
