@@ -2574,7 +2574,7 @@ console.log("Değer" , kupAl(3));
 
 // console.log(map1.get(key))
 
-*/
+
 
 
 //! Set Kullanımı
@@ -2632,4 +2632,25 @@ console.log("Değer" , kupAl(3));
 // const newSet = new Set(array)
 // console.log(newSet);
 
+*/
 
+//  ! Template Literals Kullanımı 
+
+// function write(firstName, lastName) {
+    // console.log("İsim : " + firstName + " " + "Soyisim :" + lastName);
+    //Template literals ile kullanmak 
+//     console.log(`
+//     İsim : ${firstName}
+//     Soyisim : ${lastName}`
+    
+//     )
+// }
+
+// write("Umut", "Can");
+
+
+// function getUserById(userId){
+//     console.log(`http://localhost:8088/users/${userId}`)
+// }
+
+// getUserById(5);
