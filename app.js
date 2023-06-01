@@ -2632,7 +2632,7 @@ console.log("Değer" , kupAl(3));
 // const newSet = new Set(array)
 // console.log(newSet);
 
-*/
+
 
 //  ! Template Literals Kullanımı 
 
@@ -2654,3 +2654,30 @@ console.log("Değer" , kupAl(3));
 // }
 
 // getUserById(5);
+
+*/
+
+
+//OOP GİRİŞ
+class Insan { // sınıf
+    constructor(isim, soyisim, sinif, no) { // yapıcı metot  
+        this.isim = isim;
+        this.soyisim = soyisim;
+        this.sinif = sinif;
+        this.no = no;
+    }
+    bilgileriGoster() {
+        console.log(`
+            İsim :${this.isim} 
+            Soyisim :${this.soyisim} 
+            Sınıf :${this.sinif} 
+            No :${this.no}`
+        )
+    }
+
+}
+const insan1 = new Insan("Umut", "Can", "12-B", 112);
+const insan2 = new Insan("Emir","Boztaş","10-A",155);
+insan1.bilgileriGoster();
+insan2.bilgileriGoster();
+
