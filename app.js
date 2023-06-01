@@ -2747,7 +2747,7 @@ console.log("Değer" , kupAl(3));
 // Matematik.topla(10,7);
 
 
-*/
+
 
 //! Inheritance(Miras Alma)
 
@@ -2775,3 +2775,53 @@ student1.write();
 // const person = new Person();
 // person.write();
 
+*/
+
+//! This & Super & Super() 
+
+//this
+
+//! Inheritance ile hayatımıza giren kelimler
+// super : üst sınıfı gösterir
+// super() :
+
+
+class Person {
+
+    constructor(firstName , lastName , salary){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
+    }
+
+    writeInfo(){
+        console.log(this.firstName,this.lastName,this.salary);
+    }
+
+}
+
+class  Student extends Person{
+    
+    constructor(firstName , lastName , salary){
+        super(firstName,lastName,salary); 
+    }
+
+    writeInfo(){
+        super.writeInfo();  
+    }
+
+}
+
+class Engineer extends Person{
+    constructor(firstName,lastName,salary){
+        super(firstName,lastName,salary);
+    }
+    writeInfo(){
+        super.writeInfo();
+    }
+}
+
+const student1 = new Student("umut","can",10000 );
+const engineer = new Engineer("emir","boztas",7000);
+student1.writeInfo();
+engineer.writeInfo();
