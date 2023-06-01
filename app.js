@@ -2681,7 +2681,7 @@ console.log("Değer" , kupAl(3));
 // insan1.bilgileriGoster();
 // insan2.bilgileriGoster();
 
-*/
+
 
 
 //! Static Anahtarı Kullanımı 
@@ -2745,3 +2745,33 @@ console.log("Değer" , kupAl(3));
 //? Static ise CLASS İSMİ üzerinden erişilir.
 
 // Matematik.topla(10,7);
+
+
+*/
+
+//! Inheritance(Miras Alma)
+
+class Person {
+    //Araba
+    firstname = "Umut";
+
+
+    //Ev   
+    write() {
+        console.log("Person Write :", this.firstname);
+    }
+}
+
+class Student extends Person {
+
+    write() {
+        console.log("Person sınıfından geldi", this.firstname);
+        (super.write());
+    }
+
+}
+const student1 = new Student();
+student1.write();
+// const person = new Person();
+// person.write();
+
