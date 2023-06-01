@@ -2655,29 +2655,93 @@ console.log("Değer" , kupAl(3));
 
 // getUserById(5);
 
-*/
+
 
 
 //OOP GİRİŞ
-class Insan { // sınıf
-    constructor(isim, soyisim, sinif, no) { // yapıcı metot  
-        this.isim = isim;
-        this.soyisim = soyisim;
-        this.sinif = sinif;
-        this.no = no;
-    }
-    bilgileriGoster() {
-        console.log(`
-            İsim :${this.isim} 
-            Soyisim :${this.soyisim} 
-            Sınıf :${this.sinif} 
-            No :${this.no}`
-        )
-    }
+// class Insan { // sınıf
+//     constructor(isim, soyisim, sinif, no) { // yapıcı metot  
+//         this.isim = isim;
+//         this.soyisim = soyisim;
+//         this.sinif = sinif;
+//         this.no = no;
+//     }
+//     bilgileriGoster() {
+//         console.log(`
+//             İsim :${this.isim} 
+//             Soyisim :${this.soyisim} 
+//             Sınıf :${this.sinif} 
+//             No :${this.no}`
+//         )
+//     }
 
-}
-const insan1 = new Insan("Umut", "Can", "12-B", 112);
-const insan2 = new Insan("Emir","Boztaş","10-A",155);
-insan1.bilgileriGoster();
-insan2.bilgileriGoster();
+// }
+// const insan1 = new Insan("Umut", "Can", "12-B", 112);
+// const insan2 = new Insan("Emir","Boztaş","10-A",155);
+// insan1.bilgileriGoster();
+// insan2.bilgileriGoster();
 
+*/
+
+
+//! Static Anahtarı Kullanımı 
+
+//! Bir function veya özellik static ise CLASS'a özgüdür
+//! değilse nesneye özgüdür.
+
+// class StringUtil{
+//  static   isNull(){
+
+//     }
+//     getCharacterLength(){
+
+//     }
+// }
+
+// class Insan {
+
+//     static languagesCount=10;
+
+//     constructor(firstName, lastName, salary) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.salary = salary;
+//     }
+
+//     writeInfo(){
+//         console.log(this.firstName,this.lastName,this.salary,this.languagesCount);
+//     }
+// }
+
+// const insan1 = new Insan("Umut","Can",10000);
+// insan1.writeInfo();
+
+// console.log(Insan.languagesCount);
+
+// class Matematik{
+
+//     static topla(a,b){
+//         console.log(a+b);
+//     }
+
+//     cikar(a,b){
+//         console.log(a-b);
+//     }
+
+//    static carp(a,b){
+//         console.log(a*b);
+//     }
+
+//     bol(a,b){
+//         console.log(a/b);
+//     }
+// }
+
+// const matematik = new Matematik();
+// matematik.topla(10,5);
+// matematik.carp(5,7)
+
+//! Static olarak tanımlanmamışsa NESNE üzerinden erişilir.
+//? Static ise CLASS İSMİ üzerinden erişilir.
+
+// Matematik.topla(10,7);
