@@ -2938,7 +2938,7 @@ getPostByUserId(userId);
 // getData("https://jsonplaceholder.typicode.com/posts")
 
 
-*/
+
 
 
 //?       P R O M İ S E
@@ -3083,3 +3083,37 @@ function getCommentsByUserID(url) {
 //     })
 //     .catch((err) => console.log(err))
 
+*/
+
+
+//! FETCH APİ 
+
+// function getStudents(url){
+//     fetch(url)
+//     .then((response)=>{
+//         return response.json();
+//     })
+//     .then((data)=> console.log(data))
+//     .catch((err)=> console.log(err))
+
+// }
+
+// getStudents("student.json");
+
+
+
+// function getData(url) {
+//     const promise = fetch("https://jsonplaceholder.typicode.com/albums")
+// }
+// getData("https://jsonplaceholder.typicode.com/albums")
+
+
+// function saveStudents() {
+//     fetch("https://jsonplaceholder.typicode.com/albums", {
+//         method: "POST",
+//         headers : {
+//             "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify(data)        
+//     })
+// }
