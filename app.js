@@ -2751,77 +2751,188 @@ console.log("Değer" , kupAl(3));
 
 //! Inheritance(Miras Alma)
 
-class Person {
-    //Araba
-    firstname = "Umut";
+// class Person {
+//     //Araba
+//     firstname = "Umut";
 
 
-    //Ev   
-    write() {
-        console.log("Person Write :", this.firstname);
+//     //Ev   
+//     write() {
+//         console.log("Person Write :", this.firstname);
+//     }
+// }
+
+// class Student extends Person {
+
+//     write() {
+//         console.log("Person sınıfından geldi", this.firstname);
+//         (super.write());
+//     }
+
+// }
+// const student1 = new Student();
+// student1.write();
+// // const person = new Person();
+// // person.write();
+
+// 
+
+// //! This & Super & Super() 
+
+// //this
+
+// //! Inheritance ile hayatımıza giren kelimler
+// // super : üst sınıfı gösterir
+// // super() :
+
+
+// class Person {
+
+//     constructor(firstName , lastName , salary){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.salary = salary;
+//     }
+
+//     writeInfo(){
+//         console.log(this.firstName,this.lastName,this.salary);
+//     }
+
+// }
+
+// class  Student extends Person{
+    
+//     constructor(firstName , lastName , salary){
+//         super(firstName,lastName,salary); 
+//     }
+
+//     writeInfo(){
+//         super.writeInfo();  
+//     }
+
+// }
+
+// class Engineer extends Person{
+//     constructor(firstName,lastName,salary){
+//         super(firstName,lastName,salary);
+//     }
+//     writeInfo(){
+//         super.writeInfo();
+//     }
+// }
+
+// const student1 = new Student("umut","can",10000 );
+// const engineer = new Engineer("emir","boztas",7000);
+// student1.writeInfo();
+// engineer.writeInfo();
+
+
+
+// ! ASENKRON 💥 
+
+
+// console.log("Umut");
+
+// setTimeout(() => {
+//    console.log();("Süre doldu ve çalıştı");
+// }, 1000);
+
+// setTimeout(() => {
+//     console.log("500 ms de bekledi ve çalıştı");
+// }, 500);
+
+// console.log("Can");
+
+//http istekleri
+
+
+const users = [
+    {
+        userId: 5,
+        post: "Umut Post 1 "
+    },
+
+    {
+        userId: 5,
+        post: "Umut Post 2 "
+    },
+
+    {
+        userId: 5,
+        post: "Umut Post 3 "
+    },
+    {
+        userId: 6,
+        post: "Can Post 4 "
+    },
+    {
+        userId: 7,
+        post: "Atlas Post 5 "
     }
+]
+
+
+//user id
+//post by user id 
+
+function getUserId() {
+    setTimeout(() => {
+        //Servise gittik ve cevabı aldık.
+        return 5;
+    }, 1000);
 }
 
-class Student extends Person {
-
-    write() {
-        console.log("Person sınıfından geldi", this.firstname);
-        (super.write());
-    }
+function getPostByUserId(userId) {
+    console.log(userId);
+    //Gerçek bir api'ya istek atacaksınız.
+    setTimeout(() => {
+        users.forEach((user) => {
+            if (user.userId === userId) {
+                console.log(user.post);
+            }
+        })
+    }, 500);
 
 }
-const student1 = new Student();
-student1.write();
-// const person = new Person();
-// person.write();
+
+let userId = getUserId();
+getPostByUserId(userId);
+
 
 */
 
-//! This & Super & Super() 
+// ! AJAX NEDİR? 
 
-//this
+// function prepareURL(url, id) {
+//     if (id === null) {
+//         return url;
+//     }
+//     return `${url}?postId=${id}`
+// }
 
-//! Inheritance ile hayatımıza giren kelimler
-// super : üst sınıfı gösterir
-// super() :
+// function getComments(url, id) {
+//     let newURL = prepareURL(url , id);
+//     const xhr = new XMLHttpRequest();
+//     xhr.addEventListener("readystatechange", () => {
+//         if (xhr.readyState === 4 && xhr.status === 200) {
+//             console.log(JSON.parse(xhr.responseText));
+//         }
+//     })
+//     xhr.open("GET",newURL)
+//     xhr.send();
+// }
+// getComments("https://jsonplaceholder.typicode.com/comments", 1);
 
 
-class Person {
-
-    constructor(firstName , lastName , salary){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.salary = salary;
-    }
-
-    writeInfo(){
-        console.log(this.firstName,this.lastName,this.salary);
-    }
-
-}
-
-class  Student extends Person{
-    
-    constructor(firstName , lastName , salary){
-        super(firstName,lastName,salary); 
-    }
-
-    writeInfo(){
-        super.writeInfo();  
-    }
-
-}
-
-class Engineer extends Person{
-    constructor(firstName,lastName,salary){
-        super(firstName,lastName,salary);
-    }
-    writeInfo(){
-        super.writeInfo();
-    }
-}
-
-const student1 = new Student("umut","can",10000 );
-const engineer = new Engineer("emir","boztas",7000);
-student1.writeInfo();
-engineer.writeInfo();
+//! KULLANIMI
+// function getData(url){
+//     const xhr = new XMLHttpRequest();
+//     xhr.addEventListener("readystatechange" , ()=>{
+//         if(xhr.readyState===4 && xhr.status===200){
+//             console.log(JSON.parse(xhr.response));
+//         }
+//     })
+//     xhr.open("GET",url);
+//     xhr.send();
+// }
+// getData("https://jsonplaceholder.typicode.com/posts")
