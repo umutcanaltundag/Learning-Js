@@ -3083,7 +3083,7 @@ function getCommentsByUserID(url) {
 //     })
 //     .catch((err) => console.log(err))
 
-*/
+
 
 
 //! FETCH APİ 
@@ -3117,3 +3117,34 @@ function getCommentsByUserID(url) {
 //         body: JSON.stringify(data)        
 //     })
 // }
+
+*/
+
+// async function hello(){
+//     return "Hello world";
+// }
+
+
+// console.log(hello())
+// hello()
+// .then((res)=>console.log(res))
+
+// document.querySelector("#button").addEventListener("click", () => {
+//     fetch("https://jsonplaceholder.typicode.com/posts/1")
+//         .then((response) => response.json())
+//         .then((post) => {
+//             console.log(post);
+//             // buradayız.
+//             fetch(`https://jsonplaceholder.typicode.com/comments?postId=${post.id}`)
+//                 .then((response) => response.json())
+//                 .then((comments) => console.log(comments))
+//         })
+// })
+
+//Async Await ile yapılışı.
+
+document.querySelector("#button").addEventListener("click", async () => {
+const post = await(await fetch("https://jsonplaceholder.typicode.com/posts/1")).json()
+const comments = await (await fetch(`https://jsonplaceholder.typicode.com/comments?postId=${post.id}`)).json();
+console.log(post, comments)
+})
